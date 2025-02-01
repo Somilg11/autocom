@@ -33,6 +33,11 @@ bun-debug.log*
 # local env files
 .env*.local
 .env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env*
 
 # vercel
 .vercel
