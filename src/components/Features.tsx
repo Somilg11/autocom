@@ -1,44 +1,44 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageCircle, ThumbsUp, Zap } from "lucide-react"
+"use client"
+import { useTheme } from "next-themes";
+import { MagicCard } from "@/components/ui/magic-card";
+import { MessageCircle, ThumbsUp, Zap } from "lucide-react";
 
 const features = [
   {
-    icon: <MessageCircle className="h-8 w-8 text-purple-500" />,
+    icon: <MessageCircle/>, 
     title: "Automated DM Responses",
     description: "Respond to specific keywords in DMs with AI-driven or default messages.",
   },
   {
-    icon: <ThumbsUp className="h-8 w-8 text-purple-500" />,
+    icon: <ThumbsUp/>, 
     title: "Comment Interactions",
     description: "Automatically like and reply to comments on your videos.",
   },
   {
-    icon: <Zap className="h-8 w-8 text-purple-500" />,
+    icon: <Zap />, 
     title: "Streamlined Workflow",
     description: "Turn engagement into opportunities with seamless automations.",
   },
-]
+];
 
-export default function Features() {
+export default function MagicCardFeatures() {
+  const { theme } = useTheme();
+
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-8 text-center text-purple-900">Key Features</h2>
+      <h2 className="text-4xl font-bold mb-8 text-center">Key Features</h2>
       <div className="grid gap-8 md:grid-cols-3">
         {features.map((feature, index) => (
-          <Card key={index}>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                {feature.icon}
-                <span>{feature.title}</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>{feature.description}</p>
-            </CardContent>
-          </Card>
+          <MagicCard
+            key={index}
+            className="cursor-pointer flex flex-col items-center justify-center text-xl p-6 shadow-2xl"
+            gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
+          >
+            <div className="flex items-center text-sm gap-2 mb-2">{feature.icon}<span>{feature.title}</span></div>
+            <p className="text-sm">{feature.description}</p>
+          </MagicCard>
         ))}
       </div>
     </section>
-  )
+  );
 }
-

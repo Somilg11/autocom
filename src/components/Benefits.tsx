@@ -21,8 +21,8 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="container mx-auto px-4 py-16 bg-purple-50">
-      <h2 className="text-3xl font-bold mb-8 text-center text-purple-900">Benefits of Using Slide</h2>
+    <section className="container mx-auto px-4 py-16">
+      <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Using Slide</h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {benefits.map((benefit, index) => (
           <Card key={index}>

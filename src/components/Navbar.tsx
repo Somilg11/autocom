@@ -14,8 +14,8 @@ export default function Navbar() {
   return (
     <>
       <div className='flex items-center justify-between p-5'>
-        <h1 className='flex font-bold text-2xl'>autocom</h1>
-            <div className='flex items-center gap-4 text-sm font-medium'>
+        <h1 className='flex items-center font-bold text-lg md:text-2xl'>autocom</h1>
+            <div className='flex items-center gap-2 md:gap-4 text-sm font-medium'>
                 <Link href='/features'>Features</Link>
                 <Link href='/pricing'>Pricing</Link>
                 <Link href='/about'>About</Link>
