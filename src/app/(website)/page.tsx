@@ -8,7 +8,7 @@ import Benefits from "@/components/Benefits"
 import FAQ from "@/components/FAQ"
 import CTA from "@/components/CTA"
 import Footer from "@/components/Footer"
-import { Testimonials } from '@/components/Testimonials';
+import  Testimonials  from '@/components/Testimonials';
 
 export default function LandingPage() {
   return (
