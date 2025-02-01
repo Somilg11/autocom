@@ -2,11 +2,11 @@ import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className=" py-8">
+    <footer className="py-8">
       <div className="container mx-auto px-4">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
-            <h3 className="text-xl font-bold mb-4">Slide</h3>
+            <h3 className="text-xl font-bold mb-4">autocom</h3>
             <p>Effortless Instagram engagement for businesses and creators.</p>
           </div>
           <div>
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-purple-800 text-center">
+        <div className="mt-8 pt-8 border-t text-center">
           <p>&copy; 2025 Slide. All rights reserved.</p>
         </div>
       </div>
