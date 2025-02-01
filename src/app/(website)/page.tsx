@@ -6,13 +6,13 @@ import FeaturesList from "@/components/FeaturesList"
 import HowItWorks from "@/components/HowItWorks"
 import Benefits from "@/components/Benefits"
 import FAQ from "@/components/FAQ"
-import Testimonials from "@/components/Testimonials"
 import CTA from "@/components/CTA"
 import Footer from "@/components/Footer"
+import { Testimonials } from '@/components/Testimonials';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-100 to-white">
+    <div className="min-h-screen">
       <Navbar />
       <Hero />
       <Features />
