@@ -12,3 +12,5 @@ type Props = {
 const Loader = ({children, className, state, color} : Props) => {
     return state ? (<div className={cn(className)}> <Spinner color={color}></Spinner></div>) : (children)
 }
+
+export default Loader;
