@@ -13,6 +13,7 @@ import Items from '../sidebar/items'
 import CreateAutomation from '../create-automation'
 import Search from '../search'
 import Notifications from './notifications'
+import MainBreadcrumb from '../main-bread-crumb'
 
 type Props  = {
     slug: string
@@ -77,8 +78,10 @@ const Navbar = ({slug}: Props) => {
         <Search></Search>
         <CreateAutomation></CreateAutomation>
         <Notifications></Notifications>
-        
     </div>
+        
+        <MainBreadcrumb page={page === slug ? "Home" : page } slug={slug}></MainBreadcrumb>
+        
   </div>
 }
 

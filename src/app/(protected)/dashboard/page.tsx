@@ -2,10 +2,15 @@
 import Sidebar from "@/components/global/sidebar";
 import React from "react";
 
-const Page = () => {
+type Props = {
+    children: React.ReactNode
+    params: {slug: string}
+}
+
+const Page = ({children, params}: Props) => {
     return (
         <div>
-            <Sidebar ></Sidebar>
+            <Sidebar slug={params.slug}></Sidebar>
         </div>
     )
 }

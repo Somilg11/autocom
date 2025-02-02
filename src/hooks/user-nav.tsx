@@ -1,3 +1,4 @@
+
 import { usePathname } from 'next/navigation'
 
 export const usePaths = () => {
