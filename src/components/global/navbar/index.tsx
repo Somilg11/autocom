@@ -13,7 +13,7 @@ import Items from '../sidebar/items'
 import CreateAutomation from '../create-automation'
 import Search from '../search'
 import Notifications from './notifications'
-import MainBreadcrumb from '../main-bread-crumb'
+import MainBreadcrumb from '../bread-crumbs/main-bread-crumb'
 
 type Props  = {
     slug: string

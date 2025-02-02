@@ -1,7 +1,6 @@
-
 import AutomationList from '@/components/global/automation-list'
 import CreateAutomation from '@/components/global/create-automation'
-import { Check, CheckCircle2 } from 'lucide-react'
+import { Check } from 'lucide-react'
 import React from 'react'
 
 type Props = {}
@@ -35,7 +34,7 @@ const Page = (props: Props) => {
                     October 5th 2024
                   </p>
                 </div>
-                <CheckCircle2 />
+                <Check />
               </div>
             ))}
           </div>
