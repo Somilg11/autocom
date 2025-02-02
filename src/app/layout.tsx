@@ -5,6 +5,7 @@ import {
   ClerkProvider
 } from '@clerk/nextjs'
 import { ThemeProvider } from "@/components/theme-provider";
+import ReactQueryProvider from "@/providers/react-query-provider";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -28,7 +29,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <ReactQueryProvider>
         {children}
+            </ReactQueryProvider>
         </ThemeProvider>
         </body>
     </html>
